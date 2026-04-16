@@ -6,9 +6,9 @@ function imageChange() {
     $("img").src = imgList[textIndex]; 
 } 
 class image {  
-  var #src; 
-  var #effect; 
-  static assert(src, effect) { 
+  #src; 
+  #effect; 
+  constructor (src, effect) { 
     this.#src = src; 
     this.#effect = effect; 
   } 
