@@ -33,12 +33,12 @@ img {
   background-color: yellow;
 }
 .side  {
-  width: 30%; 
+  width: 20%; 
   height: 100%;  
   background-color: red;  
 } 
 .view-side  {
-  width: 25%; 
+  width: 30%; 
   height: 90%;  
   background-color: red;  
 }
