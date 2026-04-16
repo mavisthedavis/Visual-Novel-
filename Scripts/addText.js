@@ -6,7 +6,7 @@ var delay = 0;
 function makeTxt() {    
     if (textIndex < textList.length) {  
         $("#text-box").text(""); 
-        var element = $("#text-box");    
+        var element = $("#text");    
         console.log(element); 
         var repeat = false;  
         var text = textList[textIndex]; 
