@@ -4,7 +4,7 @@ textIndex = 0;
 const parentElementList = [$("#header")[0]];  
 var delay = 0; 
 function makeTxt() {   
-    $("#text-box").Innerhtml = ""; 
+    $("#text-box").text(""); 
     var element = $("#text-box");    
     console.log(element); 
     var repeat = false;  
