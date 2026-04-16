@@ -1,4 +1,4 @@
-var imgList = [] 
+var imgList = [new image("Images/Even edit viboe.jpg", false)];  
 function imageChange() { 
     if (imgList[textIndex].effect != false) { 
       console.log("test"); 
