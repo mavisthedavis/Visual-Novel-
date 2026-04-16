@@ -1,10 +1,3 @@
-var imgList = [new image("Images/Even edit viboe.jpg", false)];  
-function imageChange() { 
-    if (imgList[textIndex].effect != false) { 
-      console.log("test"); 
-    } 
-    $("img").src = imgList[textIndex]; 
-} 
 class image {  
   #src; 
   #effect; 
@@ -19,4 +12,12 @@ class image {
   get effect() { 
     return this.#effect; 
   }
-}
+}  
+
+var imgList = [new image("Images/Even edit viboe.jpg", false)];  
+function imageChange() { 
+    if (imgList[textIndex].effect != false) { 
+      console.log("test"); 
+    } 
+    $("img").src = imgList[textIndex]; 
+} 
