@@ -14,7 +14,7 @@ class image {
   }
 }  
 
-var imgList = [new image("Images/Even edit viboe.jpg", false)];  
+var imgList = [new image("Images/Even edit viboe.jpg", false), new image("Images/Even edit viboe.jpg", false)];  
 function imageChange() { 
     if (imgList[textIndex].effect != false) { 
       console.log("test"); 
