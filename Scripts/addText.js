@@ -5,7 +5,8 @@ textIndex = 0;
 const parentElementList = [$("#header")[0]];  
 var delay = 0; 
 function makeTxt() {   
-    var textInt; 
+    var textInt;  
+    clearInterval(textInt);  
     if (textIndex < textList.length) {   
         //imageChange(); 
         $("#text").text(""); 
