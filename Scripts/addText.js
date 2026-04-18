@@ -26,7 +26,7 @@ function makeTxt() {
         var textInt = setInterval(function() {  
             element.append(textList[textIndex][intervalIndex]);  
             intervalIndex++; 
-            if (element.text().length >= text.length ||  text.length == 0) { 
+            if (element.text().length >= textList[textIndex].length || textList[textIndex].length == 0) { 
                 clearInterval(textInt);   
                 console.log("interval clear"); 
             } 
