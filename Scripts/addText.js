@@ -16,7 +16,8 @@ function makeTxt() {
             if (!(element.text().length >= textList[textIndex].length || textList[textIndex].length == 0)) {   
                 intervalIndex++;   
             } else { 
-                ClickWhileRun; 
+                ClickWhileRun = false;  
+                intervalIndex = 0; 
             }
         }, 30);  
         firstClick = false; 
