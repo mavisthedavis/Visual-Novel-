@@ -7,7 +7,11 @@ var ClickWhileRun = true;
 var element = $("#text");    
 var intervalIndex = 0; 
 function makeTxt() {    
-    
+    if (element.text().length > 0 && !firstClick && ClickWhileRun) {   
+        console.log("check"); 
+        clearInterval(textInt);     
+        element.text(textList[textIndex]);  
+    }
     /* 
     if (intervalList.length > 0) { 
            for(let x = 0; x < intervalList.length - 1; x++) {
@@ -33,16 +37,9 @@ function makeTxt() {
                 clearInterval(textInt);   
             } 
         }, 30);    
-        if (element.text().length > 0 && !firstClick && ClickWhileRun) {   
-            console.log("check"); 
-            clearInterval(textInt);     
-            element.text(textList[textIndex]);  
-            ClickWhileRun = false; 
-        } else {   
-            console.log("check"); 
-            ClickWhileRun = true; 
-            textIndex++;  
-        }
+          
+        textIndex++;  
+        
         
         
         
