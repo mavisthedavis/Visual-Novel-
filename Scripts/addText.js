@@ -4,7 +4,7 @@ const parentElementList = [$("#header")[0]];
 var delay = 0;   
 var firstClick = true;   
 var element = $("#text");    
-var intervalIndex = -1;
+var intervalIndex = 0;
 function makeTxt() {    
     
     /* 
