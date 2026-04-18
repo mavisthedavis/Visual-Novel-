@@ -10,14 +10,14 @@ function makeTxt() {
     var element = $("#text");    
     var repeat = false;  
     var text = textList[textIndex]; 
-    var i = 0; 
+    var i = 0;   
+    nexText++; 
+    if (newText > 1) { 
+        clearInterval(textInt);      
+    }       
     if (textIndex < textList.length) {    
-        newText++; 
         //imageChange(); 
-        let textInt = setInterval(function() {  
-            if (newText > 1) { 
-                clearInterval(textInt);     
-            }
+        textInt = setInterval(function() {  
             element.append(text[i]);  
             console.log(element); 
             i++; 
