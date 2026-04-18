@@ -7,7 +7,7 @@ var ClickWhileRun = true;
 var element = $("#text");    
 var intervalIndex = 0; 
 function makeTxt() {    
-    if (element.text().length > 0 && !firstClick && ClickWhileRun) {   
+    if (element.text().length > 0) {   
         console.log("check"); 
         clearInterval(textInt);     
         element.text(textList[textIndex]);  
