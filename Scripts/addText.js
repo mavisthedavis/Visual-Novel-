@@ -5,18 +5,18 @@ textIndex = 0;
 const parentElementList = [$("#header")[0]];  
 var delay = 0;   
 var firstClick = true;  
-function makeTxt() {   
-    $("#text").text("");  
-    var element = $("#text");    
-    var repeat = false;  
-    var text = textList[textIndex]; 
-    var i = 0;   
+function makeTxt() {    
     if (typeof textInt !== 'undefined') {
          if (textInt.isRunning()) {  
               clearInterval(textInt);    
               textIndex++; 
          }  
-    }
+    } 
+    $("#text").text("");  
+    var element = $("#text");    
+    var repeat = false;  
+    var text = textList[textIndex]; 
+    var i = 0;  
     if (textIndex < textList.length) {    
         //imageChange(); 
         textInt = setInterval(function() {  
