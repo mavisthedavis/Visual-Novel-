@@ -19,12 +19,11 @@ function makeTxt() {
     $("#text").text("");  
     var element = $("#text");    
     var repeat = false;  
-    var text = textList[textIndex]; 
     var i = 0; 
     if (textIndex < textList.length) {    
         //imageChange(); 
         var textInt = setInterval(function() {  
-            element.append(text[i]);  
+            element.append(textList[textIndex][i]);  
             i++; 
             if (element.text().length >= text.length ||  text.length == 0) { 
                 clearInterval(intervalList[intervalList.length - 1]);  
