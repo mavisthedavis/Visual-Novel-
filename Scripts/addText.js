@@ -22,8 +22,7 @@ function makeTxt() {
     if (textIndex < textList.length) {    
         //imageChange();   
         
-         
-        
+        textIndex++;  
         var textInt = setInterval(function() {   
             console.log(textIndex); 
             element.append(textList[textIndex][intervalIndex]);  
@@ -32,7 +31,7 @@ function makeTxt() {
                 clearInterval(textInt);   
             } 
         }, 30);   
-        textIndex++;  
+        
         
         
     } 
