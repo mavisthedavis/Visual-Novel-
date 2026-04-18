@@ -13,7 +13,8 @@ function makeTxt() {
     var i = 0;   
     if (typeof textInt !== 'undefined') {
          if (textInt.isRunning()) {  
-              clearInterval(textInt);      
+              clearInterval(textInt);    
+              textIndex++; 
          }  
     }
     if (textIndex < textList.length) {    
