@@ -5,14 +5,13 @@ textIndex = 0;
 const parentElementList = [$("#header")[0]];  
 var delay = 0; 
 function makeTxt() {   
-    $("#text").text("");
+    $("#text").text("");  
+    var element = $("#text");    
+    var repeat = false;  
+    var text = textList[textIndex]; 
+    var i = 0; 
     if (textIndex < textList.length) {   
         //imageChange(); 
-        var element = $("#text");    
-        console.log(element); 
-        var repeat = false;  
-        var text = textList[textIndex]; 
-        var i = 0;   
         let textInt = setInterval(function() { 
             element.append(text[i]);  
             console.log(element); 
