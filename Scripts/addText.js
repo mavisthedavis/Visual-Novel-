@@ -5,8 +5,6 @@ textIndex = 0;
 const parentElementList = [$("#header")[0]];  
 var delay = 0; 
 function makeTxt() {   
-    var textInt;  
-    clearInterval(textInt);  
     if (textIndex < textList.length) {   
         //imageChange(); 
         $("#text").text(""); 
@@ -15,7 +13,7 @@ function makeTxt() {
         var repeat = false;  
         var text = textList[textIndex]; 
         var i = 0;   
-        textInt = setInterval(function() { 
+        let textInt = setInterval(function() { 
             element.append(text[i]);  
             console.log(element); 
             i++; 
