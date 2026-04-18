@@ -5,8 +5,11 @@ var intervalList = [];
 textIndex = 0; 
 const parentElementList = [$("#header")[0]];  
 var delay = 0;   
-var firstClick = true;  
-function makeTxt() {  
+var firstClick = true;   
+var element = $("#text");    
+var intervalIndex = 0;
+function makeTxt() {   
+    /*
     if (intervalList.length > 0) { 
            for(let x = 0; x < intervalList.length - 1; x++) {
                if (intervalList[x].isRunning) {  
@@ -15,16 +18,14 @@ function makeTxt() {
                 }  
            }   
            textIndex++; 
-    }
+    } */ 
     $("#text").text("");  
-    var element = $("#text");    
-    var repeat = false;  
-    var i = 0; 
+    intervalIndex = 0; 
     if (textIndex < textList.length) {    
         //imageChange(); 
         var textInt = setInterval(function() {  
-            element.append(textList[textIndex][i]);  
-            i++; 
+            element.append(textList[textIndex][intervalIndex]);  
+            intervalIndex++; 
             if (element.text().length >= text.length ||  text.length == 0) { 
                 clearInterval(intervalList[intervalList.length - 1]);  
             } 
