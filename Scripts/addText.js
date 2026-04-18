@@ -5,9 +5,9 @@ textIndex = 0;
 const parentElementList = [$("#header")[0]];  
 var delay = 0; 
 function makeTxt() {   
+    $("#text").text("");
     if (textIndex < textList.length) {   
         //imageChange(); 
-        $("#text").text(""); 
         var element = $("#text");    
         console.log(element); 
         var repeat = false;  
@@ -24,4 +24,6 @@ function makeTxt() {
         textIndex++;   
     }
 }    
+
+
 
