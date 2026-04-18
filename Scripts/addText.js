@@ -6,7 +6,7 @@ const parentElementList = [$("#header")[0]];
 var delay = 0; 
 function makeTxt() {    
     if (textIndex < textList.length) {   
-        imageChange(); 
+        //imageChange(); 
         $("#text").text(""); 
         var element = $("#text");    
         console.log(element); 
