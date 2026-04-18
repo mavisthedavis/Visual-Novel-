@@ -4,15 +4,13 @@ $("html").on( "mousedown", makeTxt);
 textIndex = 0; 
 const parentElementList = [$("#header")[0]];  
 var delay = 0;  
-var newText = 0; 
 function makeTxt() {   
     $("#text").text("");  
     var element = $("#text");    
     var repeat = false;  
     var text = textList[textIndex]; 
     var i = 0;   
-    nexText++; 
-    if (newText > 1) { 
+    if (textInt.isRunning()) {  
         clearInterval(textInt);      
     }       
     if (textIndex < textList.length) {    
