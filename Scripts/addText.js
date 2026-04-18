@@ -3,7 +3,7 @@ var textIndex = -1;
 const parentElementList = [$("#header")[0]];  
 var delay = 0;   
 var firstClick = true;     
-var ClickWhileRun = true; 
+var ClickWhileRun = false; 
 var element = $("#text");    
 var intervalIndex = 0; 
 function makeTxt() {    
@@ -14,8 +14,10 @@ function makeTxt() {
             ClickWhileRun = true; 
             element.append(textList[textIndex][intervalIndex]);  
             if (!(element.text().length >= textList[textIndex].length || textList[textIndex].length == 0)) {   
-                intervalIndex++;  
-            } 
+                intervalIndex++;   
+            } else { 
+                ClickWhileRun; 
+            }
         }, 30);  
         firstClick = false; 
     }
