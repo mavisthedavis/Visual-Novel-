@@ -118,4 +118,3 @@ textList = ["Nettle is a goblin, short statured even for one of her kind, if I w
             
             "Also what on earth is a \“Walmart\”.",  
             ]; 
-            
