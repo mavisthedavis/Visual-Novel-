@@ -20,8 +20,12 @@ function makeTxt() {
     $("#text").text("");   
     intervalIndex = 0; 
     if (textIndex < textList.length) {    
-        //imageChange();  
-        textIndex++;   
+        //imageChange();   
+        if (textIndex == 1 && !(firstClick) { 
+            firstClick == false;  
+        } else { 
+            textIndex++;   
+        }
         var textInt = setInterval(function() {   
             console.log(textIndex); 
             element.append(textList[textIndex][intervalIndex]);  
