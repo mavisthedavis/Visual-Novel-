@@ -25,10 +25,9 @@ function makeTxt() {
         //imageChange(); 
         var textInt = setInterval(function() {  
             element.append(text[i]);  
-            console.log(text); 
             i++; 
             if (element.text().length >= text.length ||  text.length == 0) { 
-                clearInterval(textInt);  
+                clearInterval(intervalList[intervalList.length - 1]);  
             } 
         }, 30);  
         intervalList.push(textInt); 
