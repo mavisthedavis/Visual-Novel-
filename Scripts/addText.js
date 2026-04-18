@@ -33,7 +33,7 @@ function makeTxt() {
                 clearInterval(textInt);   
             } 
         }, 30);    
-        if (textInt.isRunning && !firstClick && ClickWhileRun) {   
+        if (intervalIndex > 0 && !firstClick && ClickWhileRun) {   
             console.log("check"); 
             clearInterval(textInt);     
             element.text(textList[textIndex]);  
