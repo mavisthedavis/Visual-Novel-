@@ -8,7 +8,7 @@ var delay = 0;
 var firstClick = true;  
 function makeTxt() {  
     if (intervalList.length > 0) { 
-           for(let x = 0; x < intervalList - 1; x++) {
+           for(let x = 0; x < intervalList.length - 1; x++) {
                if (intervalList[x].isRunning) {  
                       clearInterval(intervalList[x]);    
                     
