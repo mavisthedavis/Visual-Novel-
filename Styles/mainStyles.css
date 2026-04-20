@@ -16,7 +16,8 @@ img {
   height: 60%;  
   background-color: black;   
   display: flex;
-  align-items: center;
+  align-items: center; 
+  transition: background-color 0.5s ease-in-out; 
 }  
 #character { 
   width: 40%; 
@@ -33,12 +34,13 @@ img {
 #text-box { 
   width: 60%; 
   height: 100%; 
-  background-color: black; 
+  background-color: black;  
+  transition: background-color 0.5s ease-in-out; 
 } 
 #text {  
   font-size: 1.7vw;  
   margin: 1.7vw;  
-  color: white; 
+  color: white;  
 }
 .side  {
   width: 20%; 
@@ -49,5 +51,6 @@ img {
   height: 100%;  
 } 
 .ext { 
-  background-color: black; 
+  background-color: black;  
+  transition: background-color 0.5s ease-in-out; 
 }
