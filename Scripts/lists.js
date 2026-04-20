@@ -227,4 +227,4 @@ const father = new Father();
 const mother = new Mother(); 
 const nickel = new Nickel();  
 
-const imgList = [background.transparent, background.transparent, background.transparent, background.transparent, background.transparent, background.teacher];  
+const imgList = [background.transparent, background.transparent, background.transparent, background.transparent, background.transparent, background.transparent, background.teacher];  
