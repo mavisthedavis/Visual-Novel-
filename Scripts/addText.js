@@ -20,7 +20,8 @@ function makeTxt() {
             if (!(element.text().length >= textList[textIndex].length || textList[textIndex].length == 0)) {    
                 element.append(textList[textIndex][intervalIndex]); 
                 intervalIndex++;    
-                imageChange(); 
+                imageChange();  
+                transCheck(); 
             } else { 
                 ClickWhileRun = false;  
                 intervalIndex = 0; 
@@ -37,7 +38,8 @@ function makeTxt() {
             ClickWhileRun = false; 
         } else { 
             textIndex++;  
-            imageChange(); 
+            imageChange();  
+            transCheck(); 
             ClickWhileRun = true; 
         }
     }  
