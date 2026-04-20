@@ -186,7 +186,7 @@ class Mother {
 	#happy = new image("Images/Mother/huh.png", false);   
 	
 	get smile() { 
-		return this.#angry; 
+		return this.#smile; 
 	} 
 	get happy() { 
 		return this.#huh; 
