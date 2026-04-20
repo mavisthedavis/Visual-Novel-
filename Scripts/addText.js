@@ -14,8 +14,9 @@ function makeTxt() {
         var textInt = setInterval(function() {    
             ClickWhileRun = true;   
             if (!(element.text().length >= textList[textIndex].length || textList[textIndex].length == 0)) {    
-                element.append(textList[textIndex][intervalIndex]);
-                intervalIndex++;   
+                element.append(textList[textIndex][intervalIndex]); 
+                intervalIndex++;    
+                imageChange(); 
             } else { 
                 ClickWhileRun = false;  
                 intervalIndex = 0; 
@@ -31,7 +32,8 @@ function makeTxt() {
             element.text(textList[textIndex]);   
             ClickWhileRun = false; 
         } else { 
-            textIndex++; 
+            textIndex++;  
+            imageChange(); 
             ClickWhileRun = true; 
         }
     }  
