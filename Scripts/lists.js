@@ -188,4 +188,32 @@ class Mother {
 		return this.#huh; 
 	} 
 	
+}  
+class Nickel { 
+	#angry = new image("Images/Nickel/Angry.png", false);  
+	#big_happy = new image("Images/Nickel/Big Happy.png", false);  
+	#happy_chill = new image("Images/Nickel/Happy chill.png", false);    
+	#look = new image("Images/Nickel/Look.png", false);  
+	#sad = new image("Images/Nickel/Sad.png", false);  
+	#talking = new image("Images/Nickel/Talking.png", false);   
+
+	get angry() { 
+		return this.#angry; 
+	} 
+	get big_happy() { 
+		return this.#big_happy; 
+	} 
+	get happy_chill() { 
+		return this.#happy_chill; 
+	}  
+	get look() { 
+		return this.#look; 
+	} 
+	get sad() { 
+		return this.#sad; 
+	} 
+	get talking() { 
+		return this.#talking; 
+	} 
 } 
+
