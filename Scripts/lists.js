@@ -195,8 +195,8 @@ class Mother {
 }  
 class Nickel { 
 	#angry = new image("Images/Nickel/Angry.png", false);  
-	#big_happy = new image("Images/Nickel/Big Happy.png", false);  
-	#happy_chill = new image("Images/Nickel/Happy chill.png", false);    
+	#big_happy = new image("Images/Nickel/Big happy.png", false);  
+	#happy_chill = new image("Images/Nickel/Happy Chill.png", false);    
 	#look = new image("Images/Nickel/Look.png", false);  
 	#sad = new image("Images/Nickel/Sad.png", false);  
 	#talking = new image("Images/Nickel/Talking.png", false);   
