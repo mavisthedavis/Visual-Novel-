@@ -33,12 +33,12 @@ img {
 #text-box { 
   width: 60%; 
   height: 100%; 
-  background-color: black;
+  background-color: black; 
 } 
 #text {  
-  font-color: white; 
   font-size: 1.7vw;  
-  margin: 1.7vw; 
+  margin: 1.7vw;  
+  color: white; 
 }
 .side  {
   width: 20%; 
