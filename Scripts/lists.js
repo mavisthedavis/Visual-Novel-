@@ -189,7 +189,7 @@ class Mother {
 		return this.#smile; 
 	} 
 	get happy() { 
-		return this.#huh; 
+		return this.#happy; 
 	} 
 	
 }  
