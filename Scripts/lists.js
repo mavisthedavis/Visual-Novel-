@@ -117,4 +117,75 @@ var textList = ["Nettle is a goblin, short statured even for one of her kind, if
             "Eventually the path split, and the two parted ways. Nettle never saw Nickel or his strange cart again. She wouldn't say that her questions had really been answered, but the talk Nettle had with Nickel got her thinking about what she wanted to do, and she guessed that was good enough, not relying on other people to answer her questions and all that.",  
             
             "Also what on earth is a \"Walmart\".",  
-            ]; 
+            ];  
+
+class image {  
+  #src; 
+  #effect; 
+  constructor (src, effect) { 
+    this.#src = src; 
+    this.#effect = effect; 
+  } 
+
+  get src() { 
+    return this.#src;  
+  } 
+  get effect() { 
+    return this.#effect; 
+  }
+}   
+
+class Background { 
+	#transparent = new image("Images/transparent.png", false); 
+	get background() { 
+		return this.#background; 
+	} 
+}
+class Nettle { 
+	#angry = new image("Images/Nettle/Angry.png", false);  
+	#happy_chill = new image("Images/Nettle/Happy Chill.png", false);  
+	#talking = new image("Images/Nettle/Talking.png", false);   
+
+	get angry() { 
+		return this.#angry; 
+	} 
+	get happy_chill() { 
+		return this.#happy_chill; 
+	} 
+	get talking() { 
+		return this.#talking; 
+	} 
+} 
+class Couns { 
+	#angry = new image("Images/Couns/Kinda angy.png", false);  
+	#huh = new image("Images/Couns/huh.png", false);  
+	#interested = new image("Images/Couns/interested.png", false);   
+
+	get angry() { 
+		return this.#angry; 
+	} 
+	get huh() { 
+		return this.#huh; 
+	} 
+	get interested() { 
+		return this.#interested; 
+	} 
+} 
+class Father { 
+	#mh = new image("Images/Couns/Father.png", false); 
+	get mh() { 
+		return this.#mh; 
+	} 
+} 
+class Mother { 
+	#smile = new image("Images/Mother/evil smile.png", false);  
+	#happy = new image("Images/Mother/huh.png", false);   
+	
+	get smile() { 
+		return this.#angry; 
+	} 
+	get happy() { 
+		return this.#huh; 
+	} 
+	
+} 
