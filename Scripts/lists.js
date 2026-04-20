@@ -137,7 +137,7 @@ class image {
 
 class Background { 
 	#transparent = new image("Images/transparent.png", false);  
-	#teacher = new image("Images/Teacher.png, false); 
+	#teacher = new image("Images/Teacher.png", false); 
 	get background() { 
 		return this.#background; 
 	}  
