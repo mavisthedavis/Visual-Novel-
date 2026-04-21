@@ -11,25 +11,25 @@ function imageChange() {
 function transCheck() {   
     if (textIndex == 7) {  
         //music comes in here
-        $("#text-container").css("background-color", "blue");
-        $("#text-box").css("background-color", "blue");   
-        $(".ext").css("background-color", "blue");  
+        $("#text-container").css("background-color", "#748584");
+        $("#text-box").css("background-color", "white");   
+        $(".ext").css("background-color", "#748584");  
         $("#view").css("background-color", "white");  
-        $("#text").css("color", "white"); 
+        $("#text").css("color", "black"); 
     } 
     if (textIndex == 39) { 
-        $("#text-container").css("background-color", "grey");
-        $("#text-box").css("background-color", "black");   
-        $(".ext").css("background-color", "grey");  
-        $("#view").css("background-color", "light-prey");  
-        $("#text").css("color", "white"); 
+        $("#text-container").css("background-color", "#190c00");
+        $("#text-box").css("background-color", "#e4d9ce");   
+        $(".ext").css("background-color", "#190c00");  
+        $("#view").css("background-color", "#e4d9ce");  
+        $("#text").css("color", "black"); 
     } 
     if (textIndex == 58) { 
-        $("#text-container").css("background-color", "green");
-        $("#text-box").css("background-color", "green");   
-        $(".ext").css("background-color", "green");  
+        $("#text-container").css("background-color", "#036b16");
+        $("#text-box").css("background-color", "white");   
+        $(".ext").css("background-color", "#036b16");  
         $("#view").css("background-color", "white");  
-        $("#text").css("color", "white"); 
+        $("#text").css("color", "black"); 
     } 
     if (textIndex == 108) { 
         $("#text-container").css("background-color", "black");
