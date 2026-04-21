@@ -24,16 +24,21 @@ function transCheck() {
         $("#text-box").css("background-color", "#e4d9ce");   
         $(".ext").css("background-color", "#190c00");  
         $("#view").css("background-color", "#e4d9ce");  
-        $("#text").css("color", "black");  
-        $("#audio").attr("src", "Songs/Parents song.mp3"); 
+        $("#text").css("color", "black"); 
+        $("#audio")[0].pause(); 
+        $("#audio").attr("src", "Songs/Parents song.mp3");  
+        $("#audio")[0].play(); 
+
     } 
     if (textIndex == 58) { 
         $("#text-container").css("background-color", "#036b16");
         $("#text-box").css("background-color", "white");   
         $(".ext").css("background-color", "#036b16");  
         $("#view").css("background-color", "white");  
-        $("#text").css("color", "black");  
-        $("#audio").attr("src", "Songs/feild.mp3"); 
+        $("#text").css("color", "black");   
+        $("#audio")[0].pause();
+        $("#audio").attr("src", "Songs/feild.mp3");  
+        $("#audio")[0].play();
     } 
     if (textIndex == 108) { 
         $("#text-container").css("background-color", "black");
