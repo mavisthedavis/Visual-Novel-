@@ -118,7 +118,7 @@ var textList = ["Click to start, (you should also fullscreen for the best experi
             "Eventually the path split, and the two parted ways. Nettle never saw Nickel or his strange cart again. She wouldn't say that her questions had really been answered, but the talk Nettle had with Nickel got her thinking about what she wanted to do, and she guessed that was good enough, not relying on other people to answer her questions and all that.",  
             
             "Also what on earth is a \"Walmart\".",   
-			"Hi, hi hi hi hi. Thank you for... playing? Reading? I don't really know with these things."
+			"Hi, hi hi hi hi. Thank you for... playing? Reading? I don't really know with these things. Check out the reflection if you want to https://github.com/mavisthedavis/Visual-Novel/blob/main/relfection.txt"
             ];  
 
 class image {  
