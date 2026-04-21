@@ -14,7 +14,7 @@ window.onload = function() {
 function makeTxt() {    
     $("#text").text("");   
     intervalIndex = 0;  
-    if (textIndex < textList.length) {    
+    if (textIndex < textList.length - 1) {    
         if (firstClick) { 
             var textInt = setInterval(function() {    
                 ClickWhileRun = true;   
