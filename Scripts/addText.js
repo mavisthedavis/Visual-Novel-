@@ -13,23 +13,22 @@ window.onload = function() {
 
 function makeTxt() {    
     $("#text").text("");   
-    intervalIndex = 0; 
-    if (firstClick) { 
-        var textInt = setInterval(function() {    
-            ClickWhileRun = true;   
-            if (!(element.text().length >= textList[textIndex].length || textList[textIndex].length == 0)) {    
-                element.append(textList[textIndex][intervalIndex]); 
-                intervalIndex++;    
-                imageChange();  
-            } else { 
-                ClickWhileRun = false;  
-                intervalIndex = 0; 
-            }
-        }, delay);  
-        firstClick = false; 
-    }
+    intervalIndex = 0;  
     if (textIndex < textList.length) {    
-           
+        if (firstClick) { 
+            var textInt = setInterval(function() {    
+                ClickWhileRun = true;   
+                if (!(element.text().length >= textList[textIndex].length || textList[textIndex].length == 0)) {    
+                    element.append(textList[textIndex][intervalIndex]); 
+                    intervalIndex++;    
+                    imageChange();  
+                } else { 
+                    ClickWhileRun = false;  
+                    intervalIndex = 0; 
+                }
+            }, delay);  
+            firstClick = false; 
+        }  
         if (ClickWhileRun) {   
             console.log("check"); 
             clearInterval(textInt);     
